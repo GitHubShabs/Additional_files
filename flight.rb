@@ -6,5 +6,4 @@ class Flight
     @destination = destination
     @passengers = []
   end
-
-  
+end
