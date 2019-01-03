@@ -5,3 +5,7 @@ require_relative('../flight.rb')
 require_relative('../passenger.rb')
 
 class PassengerTest < MiniTest::Test
+
+  def setup()
+    @passenger1 = Passenger.new("Anne", "Paris", "suitcase")
+  end
