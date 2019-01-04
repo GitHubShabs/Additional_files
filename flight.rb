@@ -7,4 +7,8 @@ class Flight
     @passengers = []
   end
 
+  def passenger_count()
+    return @passengers.length()
+  end
+
 end

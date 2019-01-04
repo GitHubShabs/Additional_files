@@ -18,4 +18,9 @@ class FlightTest < MiniTest::Test
     assert_equal("Fiji", @flight.destination())
   end
 
+  def test_flight_starts_with_no_passengers()
+    assert_equal(0, @flight.passenger_count())
+
+  end
+
 end
