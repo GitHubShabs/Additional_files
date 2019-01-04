@@ -9,3 +9,9 @@ class PassengerTest < MiniTest::Test
   def setup()
     @passenger1 = Passenger.new("Anne", "Paris", "suitcase")
   end
+
+  def test_can_create_passenger()
+    assert_equal(Passenger, @passenger1.class())
+  end
+
+end
