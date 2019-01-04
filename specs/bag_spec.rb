@@ -19,4 +19,8 @@ class BagTest < MiniTest::Test
     assert_equal(0, empty_bag.weight)
   end
 
+  def test_bag_has_type()
+    assert_equal("suitcase", @bag1.type())
+  end
+
 end
