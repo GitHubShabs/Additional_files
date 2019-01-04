@@ -26,4 +26,10 @@ class PassengerTest < MiniTest::Test
     assert_equal(0, @passenger1.bag_count())
   end
 
+  def test_add_bag()
+    add_bag(@luggage)
+    assert_equal(1, @luggage.bag_count())
+  end
+
+
 end

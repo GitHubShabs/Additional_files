@@ -14,4 +14,8 @@ class FlightTest < MiniTest::Test
     assert_equal(Flight, @flight.class())
   end
 
+  def test_flight_has_destination()
+    assert_equal("Fiji", @flight.destination())
+  end
+
 end

@@ -8,8 +8,14 @@ class Passenger
     @luggage = []
   end
 
+  def add_bag(suitcase)
+    @luggage << suitcase
+  end
+
   def bag_count()
     return @luggage.length()
   end
+
+
 
 end
