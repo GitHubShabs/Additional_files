@@ -8,6 +8,7 @@ class BagTest < MiniTest::Test
 
   def setup()
     @bag1 = Bag.new(0, "suitcase")
+    @bag2 = Bag.new(10, "suitcase")
   end
 
   def test_can_create_bag()
@@ -21,6 +22,12 @@ class BagTest < MiniTest::Test
 
   def test_bag_has_type()
     assert_equal("suitcase", @bag1.type())
+  end
+
+  def test_add_to_bag()
+    increased_bag_weight = Bag.new(20, "suitcase")
+    increased_bag_weight.add_to_bag(15)
+    assert_equal(35, increased_bag_weight.bag_weight)
   end
 
 end

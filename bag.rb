@@ -11,4 +11,12 @@ class Bag
     return @weight
   end
 
+  def add_to_bag(bag_weight)
+    @weight = @weight + bag_weight
+  end
+
+  def bag_weight
+    return @weight
+  end
+
 end
