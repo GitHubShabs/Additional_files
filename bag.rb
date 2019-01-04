@@ -7,4 +7,8 @@ class Bag
     @type = type
   end
 
+  def bag_has_no_weight
+    return @weight
+  end
+
 end

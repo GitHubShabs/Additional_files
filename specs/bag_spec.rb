@@ -14,6 +14,9 @@ class BagTest < MiniTest::Test
     assert_equal(Bag, @bag1.class())
   end
 
-
+  def test_bag_has_no_weight()
+    empty_bag = Bag.new(0, "suitcase")
+    assert_equal(0, empty_bag.weight)
+  end
 
 end
