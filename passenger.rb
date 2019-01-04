@@ -16,6 +16,12 @@ class Passenger
     return @luggage.length()
   end
 
+  def total_luggage_weight()
+    sum = 0
+    @luggage.each {|a| sum+=a }
+    return a
+  end
+
 
 
 end

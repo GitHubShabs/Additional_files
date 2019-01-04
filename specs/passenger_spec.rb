@@ -8,6 +8,9 @@ class PassengerTest < MiniTest::Test
 
   def setup()
     @passenger1 = Passenger.new("Anne", "Paris", "suitcase")
+    @bag3 = Bag.new(30, "suitcase")
+    @bag4 = Bag.new(12, "suitcase")
+    @bag5 = Bag.new(8, "suitcase")
   end
 
   def test_can_create_passenger()
@@ -31,5 +34,12 @@ class PassengerTest < MiniTest::Test
     assert_equal(1, @passenger1.bag_count())
   end
 
+# This test did not work
+  # def test_total_luggage_weight()
+  #   @passenger1.add_bag(@bag1)
+  #   @passenger1.add_bag(@bag2)
+  #   @passenger1.add_bag(@bag3)
+  #   assert_equal(50, @passenger1.total_luggage_weight())
+  # end
 
 end

@@ -11,4 +11,10 @@ class Flight
     return @passengers.length()
   end
 
+  def passenger_collect(person)
+    @passengers << person
+  end
+
+
+
 end
