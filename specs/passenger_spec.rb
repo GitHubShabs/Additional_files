@@ -18,4 +18,8 @@ class PassengerTest < MiniTest::Test
     assert_equal("Anne", @passenger1.name())
   end
 
+  def test_passenger_destination()
+    assert_equal("Paris", @passenger1.destination())
+  end
+
 end
