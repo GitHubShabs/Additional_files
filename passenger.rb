@@ -5,7 +5,11 @@ class Passenger
   def initialize(name, destination,luggage)
     @name = name
     @destination = destination
-    @luggage = luggage
+    @luggage = []
+  end
+
+  def bag_count()
+    return @luggage.length()
   end
 
 end

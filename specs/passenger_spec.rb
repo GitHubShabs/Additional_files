@@ -22,4 +22,8 @@ class PassengerTest < MiniTest::Test
     assert_equal("Paris", @passenger1.destination())
   end
 
+  def test_bags_start_empty()
+    assert_equal(0, @passenger1.bag_count())
+  end
+
 end
